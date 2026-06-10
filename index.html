@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain Surprise — Full-stack web &amp; data-engineering consultancy</title>
+  <meta name="description" content="Brain Surprise is a full-stack web-development and data-engineering consultancy, founded and led by senior engineers formerly at Uber, Goldman Sachs, and Lumosity." />
+  <meta name="theme-color" content="#0d0f1a" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Brain Surprise" />
+  <meta property="og:description" content="A full-stack web-development and data-engineering consultancy." />
+  <meta property="og:image" content="assets/logo.webp" />
+  <meta property="og:url" content="https://brainsurprise.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/webp" href="assets/logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="Brain Surprise home">
+      <img src="assets/logo.webp" alt="" class="nav__logo" width="40" height="26" />
+      <span>Brain Surprise</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#offer">What we offer</a>
+      <a href="#clients">Clients</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#team">Team</a>
+      <a class="nav__cta" href="#contact">Let's chat</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <canvas class="hero__canvas" id="poly" aria-hidden="true"></canvas>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__inner reveal">
+      <img src="assets/logo.webp" alt="Brain Surprise logo" class="hero__logo" width="180" height="115" />
+      <h1 class="hero__title">We build the technical side<br />of your business.</h1>
+      <p class="hero__sub">
+        A full-stack web-development and data-engineering consultancy —
+        founded and led by senior engineers formerly at
+        <strong>Uber</strong>, <strong>Goldman Sachs</strong>, and <strong>Lumosity</strong>.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contact">Let's chat</a>
+        <a class="btn btn--ghost" href="#offer">What we do →</a>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#about" aria-label="Scroll down">↓</a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="section__head reveal">
+      <span class="eyebrow">Who we are</span>
+      <h2>Senior engineers who become your whole technical org — or strengthen the one you have.</h2>
+    </div>
+    <div class="about__grid">
+      <p class="reveal">We have deep experience building web applications from the ground up, and years of expertise in making big data accessible. We're skilled across a wide range of technologies, with an emphasis on distributed processing and microservices.</p>
+      <p class="reveal">We've led teams to build large, complex applications — serving as the entire technical side of a business. And we've partnered with existing engineering teams to carve out and own essential infrastructure and product pieces.</p>
+      <p class="reveal">We are leaders in our field, having written important open-source projects and pushed the bleeding edge of this rapidly evolving domain. We'd love to work with you.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><span class="stat__num" data-count="2017">2017</span><span class="stat__label">Building since</span></div>
+      <div class="stat"><span class="stat__num" data-count="3">3</span><span class="stat__label">Senior engineers</span></div>
+      <div class="stat"><span class="stat__num" data-count="6">6+</span><span class="stat__label">Industries served</span></div>
+      <div class="stat"><span class="stat__num">∞</span><span class="stat__label">Curiosity</span></div>
+    </div>
+  </section>
+
+  <!-- ===== OFFER ===== -->
+  <section class="section offer" id="offer">
+    <div class="section__head reveal">
+      <span class="eyebrow">What we offer</span>
+      <h2>End-to-end engineering, from first commit to scaled platform.</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal"><div class="card__icon">⚙️</div><h3>Virtual CTO</h3><p>Technical leadership, architecture, and hiring guidance — without a full-time exec hire.</p></article>
+      <article class="card reveal"><div class="card__icon">🔒</div><h3>HIPAA-Compliant Infrastructure</h3><p>Secure, audited infrastructure for healthcare and other regulated industries.</p></article>
+      <article class="card reveal"><div class="card__icon">🧩</div><h3>Web-Application Development</h3><p>Full-stack products built from the ground up, designed to be easy to change and adapt.</p></article>
+      <article class="card reveal"><div class="card__icon">🌐</div><h3>Scalable / Distributed Systems</h3><p>Systems that hold up under real load, built on solid distributed-systems foundations.</p></article>
+      <article class="card reveal"><div class="card__icon">📊</div><h3>Data Engineering</h3><p>Pipelines and platforms that turn raw data into insight your whole team can use.</p></article>
+      <article class="card reveal"><div class="card__icon">☁️</div><h3>AWS &amp; Google Cloud</h3><p>Deep, hands-on expertise across both major clouds and serverless architectures.</p></article>
+      <article class="card reveal"><div class="card__icon">👥</div><h3>Development Team Management</h3><p>We lead teams and deliver while staying close to engineering and product.</p></article>
+      <article class="card reveal card--accent"><div class="card__icon">✦</div><h3>...and the hard stuff</h3><p>The incisive, deep questions early-stage companies need answered. We ask them.</p></article>
+    </div>
+  </section>
+
+  <!-- ===== TECH ===== -->
+  <section class="section tech">
+    <div class="section__head reveal">
+      <span class="eyebrow">Under the hood</span>
+      <h2>A toolbox built over years at scale.</h2>
+    </div>
+    <div class="tech__group reveal">
+      <h4>Languages</h4>
+      <ul class="chips">
+        <li>Python</li><li>JavaScript</li><li>Ruby</li><li>Scala</li><li>SQL</li><li>Java</li><li>Go</li><li>C++</li><li>C#</li>
+      </ul>
+    </div>
+    <div class="tech__group reveal">
+      <h4>AWS</h4>
+      <ul class="chips">
+        <li>Lambda</li><li>EMR</li><li>ECS</li><li>EC2</li><li>Redshift</li><li>DynamoDB</li>
+      </ul>
+    </div>
+    <div class="tech__group reveal">
+      <h4>Technologies</h4>
+      <ul class="chips">
+        <li>Docker</li><li>Kafka / Confluent</li><li>Hadoop</li><li>Hive</li><li>Spark</li><li>Serverless</li><li>Rails</li><li>Django</li><li>Angular</li><li>React</li><li>PostgreSQL</li><li>MySQL</li><li>Airflow</li><li>Elasticsearch</li><li>Redis</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTS ===== -->
+  <section class="section clients" id="clients">
+    <div class="section__head reveal">
+      <span class="eyebrow">Who we've worked with</span>
+      <h2>Trusted across healthcare, commodities, telecom, and consumer tech.</h2>
+    </div>
+    <ul class="clients__list reveal">
+      <li>Curology</li><li>Spendgo</li><li>Titeg</li><li>Lumosity</li><li>Uber</li><li>Goldman Sachs</li>
+    </ul>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="section__head reveal">
+      <span class="eyebrow">What people are saying</span>
+      <h2>The work speaks. So do the people we've done it for.</h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal">
+        <blockquote>Again and again, we have seen Brain Surprise add immediate value to our application while staying within budget and keeping a forward-looking eye on where we are going as a business.</blockquote>
+        <figcaption><strong>Sam Woldenberg</strong><span>Head of Product, Titeg</span></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <blockquote>...they built the foundation of our data-engineering platform and have since expanded their work to help us level up our growth-engineering stack. Through their work, we were able to gain critical new insights from our data as well as automate and scale our marketing analytics.</blockquote>
+        <figcaption><strong>Fabian Seelbach</strong><span>Chief Marketing Officer, Curology</span></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <blockquote>We recommend them without reservation to any other company looking to work with a versatile software development team.</blockquote>
+        <figcaption><strong>Kerina Hayashi</strong><span>VP Product &amp; Design, Spendgo</span></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <blockquote>As consultants, they have a strong sense of ownership and can deliver projects on time and in scope with very little direction and oversight. Coupled with their significant background in the modern data ecosystem and ability to ask deep, incisive questions in defining project scope, this is extremely valuable to early-stage companies.</blockquote>
+        <figcaption><strong>Marc Bollinger</strong><span>Data Engineering Manager, Lumosity</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section team" id="team">
+    <div class="section__head reveal">
+      <span class="eyebrow">Meet the team</span>
+      <h2>Three engineers, one high bar.</h2>
+    </div>
+    <div class="team__grid">
+      <article class="member reveal">
+        <img src="assets/rob.webp" alt="Rob Froetscher" loading="lazy" />
+        <h3>Rob Froetscher</h3>
+        <p class="member__role">Founder</p>
+        <p>Rob loves working at the intersection of human and computer problems, striving for clear, concise solutions where humans let computers do what they do best. His projects add value immediately with minimal complexity and stay easy to change. He started in marketing, spent years as a growth engineer at Lumosity, then moved to data engineering — co-writing an open-source project to help employees access data and working on the company's big-data pipeline. He founded Brain Surprise in 2017 and has since served companies from healthcare to commodities to telecom.</p>
+      </article>
+      <article class="member reveal">
+        <img src="assets/sam.webp" alt="Sam Marcellus" loading="lazy" />
+        <h3>Sam Marcellus</h3>
+        <p class="member__role">Engineer · ex-Uber</p>
+        <p>Sam cut his teeth writing C++ at financial-data company FactSet, building a solid foundation of technical and project-management skills. He then joined as an early engineer at Uber in 2013, and over five years worked on everything from driver payments to internal tooling, data infrastructure, privacy, and standing up Uber's first non-US data center in China. He's been both an individual contributor and an engineering manager, comfortable in technical leadership on small teams while staying close to engineering and product.</p>
+      </article>
+      <article class="member reveal">
+        <img src="assets/andy.webp" alt="Andrew Xue" loading="lazy" />
+        <h3>Andrew Xue</h3>
+        <p class="member__role">Engineer · ex-Goldman Sachs</p>
+        <p>Andy is a software engineer by way of the sciences — his first big project implemented a Monte Carlo model of DNA chains. He moved on to the demanding Program Trading Technology team at Goldman Sachs, where he led the Sales Trading platform and the sales-attribution system under real deadline pressure. He later joined Lumosity as one of its founding data engineers, scaling data infrastructure on Hadoop, Spark, and Kafka/Confluent. He has deep experience structuring systems to minimize complexity, equally at home with OOP, compositional, and functional styles.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="contact__card reveal">
+      <span class="eyebrow">Want to work with us?</span>
+      <h2>Let's build something surprising.</h2>
+      <a class="btn btn--primary btn--lg" href="mailto:hello@brainsurprise.com">hello@brainsurprise.com</a>
+      <p class="contact__loc">Oakland, CA</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <img src="assets/logo.webp" alt="" class="footer__logo" width="34" height="22" />
+    <p>&copy; <span id="year"></span> Brain Surprise. Built in Oakland.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
